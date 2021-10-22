@@ -97,6 +97,7 @@ const canWeDeliverTwo = zipCode => {
 console.log(canWeDeliverTwo(84606))
 console.log(canWeDeliverTwo(85205))
 
+separator()
 //////////////////PROBLEM 3////////////////////
 /* 
     Below is an array of objects that have some
@@ -132,8 +133,13 @@ const deals = [
 
 //CODE HERE
 
+let {title: dealOne} = deals[0]
+dealOne = dealOne.replace('15', '10')
+deals[0].title = dealOne
 
+console.log(deals[0])
 
+separator()
 /*
     The restaurant is going to continue its
     family deal for another month. 
@@ -148,3 +154,9 @@ const deals = [
 */
 
 //CODE HERE
+let {desc: dealTwoDesc} = deals[1]
+dealTwoDesc = dealTwoDesc.replace('March', 'April')
+dealTwoDesc = dealTwoDesc.trim()
+deals[1].desc = dealTwoDesc
+
+console.log(deals[1])
