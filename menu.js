@@ -105,7 +105,7 @@ separator()
 //CODE HERE
 
 let foodArr = [
-    {
+    object = {
         name: "Cheese Lover's Pizza", 
         price: 12, 
         category: 'Entree', 
@@ -128,7 +128,7 @@ let foodArr = [
         popularity: 3,
         rating: 9,
         tags: ['kids', 'vegetarian', 'crowd pleaser']
-    }
+    },
     {
         name: "Chef's Salad",
         price: 6,
@@ -162,7 +162,30 @@ let foodArr = [
 
 //CODE HERE
 
-// const filteredFood = foodArr.filter(/* CALLBACK HERE */)
+const filteredFood = foodArr.filter(string);{
+
+    if (object.tags.includes(string)){
+        return true
+    } else {
+        return false
+    }
+}
+
+
+
+
+
+// function(element){
+//     if (element.includes('kids)){
+//         return true
+//     } else {
+//         // return false
+//     }
+
+// })
+
+
+console.log(filteredFood)
 
 
 
