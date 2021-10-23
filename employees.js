@@ -49,7 +49,8 @@ let empOne = new Employee('Jess', ['weekday mornings, weekday afternoons'])
 */
 
 //CODE HERE
-getSchedule(empOne)
+
+empOne.getSchedule()
 
 /*
     Make a copy of the empOne object
@@ -65,7 +66,10 @@ getSchedule(empOne)
 
 //CODE HERE
 
+let empTwo = {...empOne}
+empTwo.name = 'Nick'
 
+console.log(empTwo)
 
 //////////////////PROBLEM 2////////////////////
 /*  
@@ -91,7 +95,17 @@ getSchedule(empOne)
 */
 
 //CODE HERE
-
+class Manager extends Employee {
+    constructor(name, shifts, employees) {
+        super(name, shifts)
+        this.employees = employees
+    }
+    getEmployees(){
+        console.log(`${this.name} manages ${this.employees}`)
+    }
+    addEmployee(emp){this.employees.push(emp)
+    }
+}
 
 
 /*
@@ -106,7 +120,7 @@ getSchedule(empOne)
 */
 
 //CODE HERE
-
+var manager = new Manager('Winston', ['weekday mornings', 'weekday afternoons'], ['Cece', 'Schmidt'])
 
 /*
     Call the `getEmployees` method on the
@@ -114,7 +128,7 @@ getSchedule(empOne)
 */
 
 //CODE HERE
-
+manager.getEmployees()
 /*
     Call the `addEmployee` method on the 
     `manager` object passing in the string 
@@ -122,7 +136,7 @@ getSchedule(empOne)
 */
 
 //CODE HERE 
-
+manager.addEmployee('Coach')
 /*
     Call the `getEmployees` method on the
     `manager` object again to confirm 
@@ -130,3 +144,4 @@ getSchedule(empOne)
 */
 
 //CODE HERE
+manager.getEmployees()
