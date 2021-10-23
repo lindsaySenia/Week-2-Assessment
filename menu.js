@@ -105,7 +105,7 @@ separator()
 //CODE HERE
 
 let foodArr = [
-    object = {
+    {
         name: "Cheese Lover's Pizza", 
         price: 12, 
         category: 'Entree', 
@@ -161,15 +161,27 @@ let foodArr = [
 */
 
 //CODE HERE
+const filter = 'kids'
 
-const filteredFood = foodArr.filter(string);{
+var filteredFood = foodArr.filter((item) => {
+    return (item.tags.indexOf(filter) >= 0)
+})
 
-    if (object.tags.includes(string)){
-        return true
-    } else {
-        return false
-    }
-}
+// var tagsArr = element.forEach => {element.tags.includes('kids')}
+    // = function(element, 0) {
+    //     return element.tags === 'kids'
+
+
+// = function(element, 0) {
+//     return element.tags === 'kids'
+
+// var filteredFood = foodArr.filter(tagsArr)
+
+    // if (object.tags.includes(string)){
+    //     return true
+    // } else {
+    //     return false
+    // }
 
 
 
@@ -185,7 +197,7 @@ const filteredFood = foodArr.filter(string);{
 // })
 
 
-console.log(filteredFood)
+// console.log(filteredFood)
 
 
 
