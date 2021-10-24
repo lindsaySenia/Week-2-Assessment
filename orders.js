@@ -61,12 +61,11 @@ class Ticket{
 //CODE HERE
 let firstTicket = new Ticket("Oreo Delight, Hawaiian Pizza", '4:40pm', '311')
 
-console.log(firstTicket)
-/*
-    Call the `updateStatus` method on
-    `firstTicket` passing in the string
-    'cooking'
-*/
+// console.log(firstTicket)
+// /*
+    // Call the `updateStatus` method on
+    // `firstTicket` passing in the string
+    // 'cooking'
 
 //CODE HERE
 
