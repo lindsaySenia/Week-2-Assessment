@@ -64,7 +64,7 @@ const calcFinalPrice = (cartTotal, couponValue, tax) => {
     console.log(finalPrice)
 }
 
-calcFinalPrice(summedPrice, 10, 0.06)
+calcFinalPrice(summedPrice, 5, 0.06)
 
 
 //////////////////PROBLEM 3////////////////////
@@ -89,7 +89,9 @@ calcFinalPrice(summedPrice, 10, 0.06)
 
 /*
     TEXT ANSWER HERE
-
+// First name, last name, phone number and address are part of the contact and billing information that most businesses collect for online purchases. These would all be strings because we wouldn't need to add the number in the phone number or address. I didn't include state or zip code as part of the address because pizza places typically don't deliver too far from where they are located. Also, I don't know the zipcode to Gotham City.
+I am going to include their birthday and email address as well because restaurants like to send coupons for birthdays and other promotions through emails
+I'll add an option for subscription to email newsletter as a boolean. I'm also going to add loyalty points as a number that can be added or subtracted and an array of favorite items.
 */
 
 /*
@@ -98,3 +100,16 @@ calcFinalPrice(summedPrice, 10, 0.06)
 */
 
 //CODE HERE
+let customerOne = {
+    firstName : 'Bruce',
+    lastName : 'Wayne',
+    phoneNum : '735-185-7301',
+    emailAdd: 'iamNOTbatman@batcave.net',
+    streetAdd : '1007 Mountain Drive',
+    city : 'Gotham',
+    birthday : 'February 19',
+    newsLett: true,
+    loyaltyPts: 100,
+    favFood: ["Cheese Lover's, Hawaiian, Oreo Delight"]
+}
+console.log(customerOne.firstName + customerOne.lastName)
