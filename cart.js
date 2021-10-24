@@ -112,4 +112,4 @@ let customerOne = {
     loyaltyPts: 100,
     favFood: ["Cheese Lover's, Hawaiian, Oreo Delight"]
 }
-console.log(customerOne.firstName + customerOne.lastName)
+console.log(customerOne.firstName + ' ' + customerOne.lastName)
