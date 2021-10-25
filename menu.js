@@ -161,43 +161,14 @@ let foodArr = [
 */
 
 //CODE HERE
-const filter = 'kids'
-
-var filteredFood = foodArr.filter((item) => {
-    return (item.tags.indexOf(filter) >= 0)
-})
-
-// var tagsArr = element.forEach => {element.tags.includes('kids')}
-    // = function(element, 0) {
-    //     return element.tags === 'kids'
+const filteredFood = foodArr.filter(function(elem) {
+    return elem.tags.includes('kids')
+    })
 
 
-// = function(element, 0) {
-//     return element.tags === 'kids'
-
-// var filteredFood = foodArr.filter(tagsArr)
-
-    // if (object.tags.includes(string)){
-    //     return true
-    // } else {
-    //     return false
-    // }
+console.log(filteredFood)
 
 
-
-
-
-// function(element){
-//     if (element.includes('kids)){
-//         return true
-//     } else {
-//         // return false
-//     }
-
-// })
-
-
-// console.log(filteredFood)
 
 
 
@@ -242,7 +213,22 @@ var filteredFood = foodArr.filter((item) => {
 
 //CODE HERE
 
+// const filterByProperty = (property, number, type) => {
+//     let filterArr = foodArr.filter(function(elem){
+//         let above = >
+//         let below = <
+//         if (type = above){
+//             return elem.property > number
+//         } else if (type = below){
+//             return elem.property < number
+//         } else {
+//             console.log('try again')
+//         }
+//         return filterArr
+//     }) 
+// }
 
+// console.log(filterByProperty(foodArr.rating, 5, above))
 /*
     Invoke the `filterByProperty` function passing
     in a value for each paramter.
